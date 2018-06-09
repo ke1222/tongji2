@@ -1,0 +1,36 @@
+class Kaifang(object):
+    def __init__(self):
+        self.file_path = 'C:\\Users\\lenovo\\Desktop\\kaifangX.txt'
+        self.man = 0
+        self.woman = 0
+        self.lines_total = 0
+        self.lines_total = 0
+
+    def total_line(self):
+        with open(self.file_path, 'r', encoding='gbk', errors='ignore') as f:
+            self.lines = f.readlines()
+            self.lines_total = len(self.lines)
+            print(self.lines_total)
+
+    def get_man_woman(self):
+        self.total_line()
+        for line in self.lines:
+            try:
+                gender = line.split(',')[2]
+                if gender == 'F':
+                    self.woman += 1
+                if gender == 'M':
+                    self.man += 1
+            except Exception as e:
+                    print(e)
+                    print('未获取到性别')
+                    continue
+        print('woman:%d' % self.woman)
+        print('man:%d' % self.man)
+
+    def percent(self):
+        self.get_man_woman()
+        print('woman percent is:', (self.woman / self.lines_total) * 100, '%')
+        print('man percent is:', (self.man / self.lines_total) * 100, '%')
+start = Kaifang()
+start.percent()
