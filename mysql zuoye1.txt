@@ -1,0 +1,61 @@
+sudo mysql -u root -p
+
+create database taobao charset=utf8;
+
+use taobao;
+
+create table gwc ( 
+  id int primary key not null auto_increment, 
+  name varchar(30), 
+  love varchar(30), 
+  discount char(10) not null, 
+  12wish varchar(30));
+
+insert into gwc(id,name,love,discount,12wish) values (1,"ke1222","food","yes","bag");
+
+select * from gwc;
++----+--------+------+----------+--------+
+| id | name   | love | discount | 12wish |
++----+--------+------+----------+--------+
+|  1 | ke1222 | food | yes      | bag    |
++----+--------+------+----------+--------+
+
+insert into gwc(id,name,love,discount,12wish) values   
+  (2,"zht","clothes","no","sports suit"),
+  (3,"hjp","shoes","yes","shoes"),
+  (4,"zb","drink","yes","wine");
+
+insert into gwc(name,love,discount,12wish) values ("abc","fruit","no","fruit salsd");
+select * from gwc;                                                      +----+--------+---------+----------+-------------+
+| id | name   | love    | discount | 12wish      |
++----+--------+---------+----------+-------------+
+|  1 | ke1222 | food    | yes      | bag         |
+|  2 | zht    | clothes | no       | sports suit |
+|  3 | hjp    | shoes   | yes      | shoes       |
+|  4 | zb     | drink   | yes      | wine        |
+|  5 | abc    | fruit   | no       | fruit salsd |
++----+--------+---------+----------+-------------+
+
+update gwc set 12wish='bread' where id=1;
+select * from gwc;
++----+--------+---------+----------+-------------+
+| id | name   | love    | discount | 12wish      |
++----+--------+---------+----------+-------------+
+|  1 | ke1222 | food    | yes      | bread       |
+|  2 | zht    | clothes | no       | sports suit |
+|  3 | hjp    | shoes   | yes      | shoes       |
+|  4 | zb     | drink   | yes      | wine        |
+|  5 | abc    | fruit   | no       | fruit salsd |
++----+--------+---------+----------+-------------+
+
+delete from gwc where id=5;
+select * from gwc;
++----+--------+---------+----------+-------------+
+| id | name   | love    | discount | 12wish      |
++----+--------+---------+----------+-------------+
+|  1 | ke1222 | food    | yes      | bread       |
+|  2 | zht    | clothes | no       | sports suit |
+|  3 | hjp    | shoes   | yes      | shoes       |
+|  4 | zb     | drink   | yes      | wine        |
++----+--------+---------+----------+-------------+
+
