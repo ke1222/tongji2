@@ -1,0 +1,43 @@
+use taobao;
+
+create table scb( 
+   id int primary key not null unique, 
+   account varchar(45) not null, 
+   name varchar(45),
+   goods varchar(45));
+
+
+insert into scb(id,account,name,goods) values (1,15134978272,"zwk","clothes"),(2,13947819248,"hlp","food"),(3,15389826759,"zht","drink"),(4,13847818218,"zb","shoes"),(5,13147809949,"haha","skirt");
+
+select * from scb;                                                      +----+-------------+------+---------+
+| id | account     | name | goods   |
++----+-------------+------+---------+
+|  1 | 15134978272 | zwk  | clothes |
+|  2 | 13947819248 | hlp  | food    |
+|  3 | 15389826759 | zht  | drink   |
+|  4 | 13847818218 | zb   | shoes   |
+|  5 | 13147809949 | haha | skirt   |
++----+-------------+------+---------+
+
+delete from scb where id=5;
+
+select * from scb;
++----+-------------+------+---------+
+| id | account     | name | goods   |
++----+-------------+------+---------+
+|  1 | 15134978272 | zwk  | clothes |
+|  2 | 13947819248 | hlp  | food    |
+|  3 | 15389826759 | zht  | drink   |
+|  4 | 13847818218 | zb   | shoes   |
++----+-------------+------+---------+
+
+select goods from scb;
++---------+
+| goods   |
++---------+
+| clothes |
+| food    |
+| drink   |
+| shoes   |
++---------+
+
