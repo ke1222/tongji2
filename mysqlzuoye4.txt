@@ -1,0 +1,60 @@
+create table film( 
+  id int primary key not null auto_increment, 
+  name varchar(45), 
+  year int not null, 
+  director varchar(45),
+  grade decimal(2,1));
+
+
+insert into film( id,name,year,director,grade) values  
+  (1,"a big show",2018,"huangbo",7.3), 
+  (2,"predecessor3",2017,"tianyusheng",7.7), 
+  (3,"operation red sea",2018,"linchaoxian",8.3), 
+  (4,"wolfwarriors2",2017,"wujing",8.1), 
+  (5,"later on we",2018,"liuruoying",7);
+
+select * from film;
++----+-------------------+------+-------------+-------+
+| id | name              | year | director    | grade |
++----+-------------------+------+-------------+-------+
+|  1 | a big show        | 2018 | huangbo     |   7.3 |
+|  2 | predecessor3      | 2017 | tianyusheng |   7.7 |
+|  3 | operation red sea | 2018 | linchaoxian |   8.3 |
+|  4 | wolfwarriors2     | 2017 | wujing      |   8.1 |
+|  5 | later on we       | 2018 | liuruoying  |   7.0 |
++----+-------------------+------+-------------+-------+
+
+ select * from film where name like '%red%';
++----+-------------------+------+-------------+-------+
+| id | name              | year | director    | grade |
++----+-------------------+------+-------------+-------+
+|  2 | predecessor3      | 2017 | tianyusheng |   7.7 |
+|  3 | operation red sea | 2018 | linchaoxian |   8.3 |
++----+-------------------+------+-------------+-------+
+
+select * from film where director like '%ruo%';
++----+-------------+------+------------+-------+
+| id | name        | year | director   | grade |
++----+-------------+------+------------+-------+
+|  5 | later on we | 2018 | liuruoying |   7.0 |
++----+-------------+------+------------+-------+
+
+select * from film where year=2017;
++----+---------------+------+-------------+-------+
+| id | name          | year | director    | grade |
++----+---------------+------+-------------+-------+
+|  2 | predecessor3  | 2017 | tianyusheng |   7.7 |
+|  4 | wolfwarriors2 | 2017 | wujing      |   8.1 |
++----+---------------+------+-------------+-------+
+
+select * from film where grade>7.5;
++----+-------------------+------+-------------+-------+
+| id | name              | year | director    | grade |
++----+-------------------+------+-------------+-------+
+|  2 | predecessor3      | 2017 | tianyusheng |   7.7 |
+|  3 | operation red sea | 2018 | linchaoxian |   8.3 |
+|  4 | wolfwarriors2     | 2017 | wujing      |   8.1 |
++----+-------------------+------+-------------+-------+
+
+
+
