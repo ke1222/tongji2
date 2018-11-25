@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>zwk</title>
+</head>
+<body>
+<h1>&nbsp;《悯农》</h1>
+<b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;锄&nbsp;禾&nbsp;日&nbsp;当&nbsp;午，</b><br />
+<b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;汗&nbsp;滴&nbsp;禾&nbsp;下&nbsp;土。</b><br />
+<b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;谁&nbsp;知&nbsp;盘&nbsp;中&nbsp;餐，</b><br />
+<b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;粒&nbsp;粒&nbsp;皆&nbsp;辛&nbsp;苦。</b><br />
+<h1>《静夜思》</h1>
+<b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;床&nbsp;前&nbsp;明&nbsp;月&nbsp;光，</b><br />
+<b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;疑&nbsp;是&nbsp;地&nbsp;上&nbsp;霜。</b><br />
+<b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;举&nbsp;杯&nbsp;望&nbsp;明&nbsp;月，</b><br />
+<b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;低&nbsp;头&nbsp;思&nbsp;故&nbsp;乡。</b><br />
+
+<body>
+</html>
+         《悯农》
+      锄 禾 日 当 午，
+      汗 滴 禾 下 土。
+      谁 知 盘 中 餐，
+      粒 粒 皆 辛 苦。
+       《静夜思》
+      床 前 明 月 光，
+      疑 是 地 上 霜。
+      举 杯 望 明 月，
+      低 头 思 故 乡。
